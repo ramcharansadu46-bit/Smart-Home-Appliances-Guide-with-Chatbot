@@ -1,67 +1,183 @@
-# 🏠 Smart Home Appliance Buyer Guide
+# 🏠 Smart Home Appliances Buyers Guide with Chatbot
 
-A production-ready AI-powered platform for discovering and comparing smart home appliances. Search, filter, and compare 100+ devices across multiple retailers with real-time pricing.
+## 📌 Overview
 
-![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)
-![FastAPI](https://img.shields.io/badge/fastapi-0.104+-green.svg)
-![Bootstrap 5](https://img.shields.io/badge/bootstrap-5.3-purple.svg)
+Smart Home Appliances Buyers Guide with Chatbot is an AI-powered web application designed to help users explore, compare, and understand smart home appliances through an interactive chatbot experience.
 
-## ✨ Features
+The project provides intelligent recommendations, appliance guidance, and user-friendly interactions using AI and modern web technologies.
 
-### 🔍 Smart Search
-- **100+ Products**: Comprehensive database of smart home devices
-- **Multi-Mode Search**:
-  - **Static Mode**: Instant search from curated database (no API needed)
-  - **Google Shopping**: Real-time prices via SerpAPI integration
-  - **Amazon API**: Ready for Amazon Product Advertising API (optional)
-- **Auto Fallback**: Seamlessly falls back if APIs are unavailable
+---
 
-### 🎯 Advanced Filtering
-- **13 Categories**: Thermostats, Speakers, Cameras, Locks, Lights, Vacuums, and more
-- **Sort Options**: Most Relevant, Highest Rated, Price Low-to-High, Price High-to-Low
-- **Category Filtering**: Browse by device type
+# 🚀 Features
 
-### 🛒 E-Commerce Integration
-- **One-Click Buy**: Direct links to Amazon and Flipkart
-- **Price Comparison**: See prices across retailers
-- **Real-Time Availability**: Updated pricing from live sources
+* 🤖 AI-powered chatbot assistance
+* 🛒 Smart appliance recommendations
+* 🔍 Search and explore smart home products
+* 📊 User-friendly dashboard and interface
+* ⚡ Fast backend API integration
+* 🧠 AI/ML-based response generation
+* 🔐 Authentication and secure access
+* 📱 Responsive web design
 
-## 🚀 Quick Start (5 minutes)
+---
 
-### Prerequisites
-- Python 3.8+
-- pip
+# 🧠 Tech Stack
 
-### Installation
+## Frontend
+
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+
+## Backend
+
+* Python
+* Flask / FastAPI
+
+## AI / ML
+
+* Python AI libraries
+* Recommendation logic
+* Chatbot integration
+
+---
+
+# 🏗️ Project Architecture
+
+```text
+User Interface
+      ↓
+Frontend Application
+      ↓
+Backend API Server
+      ↓
+AI Chatbot Engine
+      ↓
+Recommendation & Response System
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+Smart Home Appliances Buyers Guide with Chatbot/
+│
+├── backend/
+│   ├── app/
+│   ├── main.py
+│   ├── requirements.txt
+│
+├── frontend/
+│   ├── static/
+│   ├── templates/
+│
+├── README.md
+├── .gitignore
+```
+
+---
+
+# ⚙️ Installation & Setup
+
+## 1️⃣ Clone Repository
 
 ```bash
-cd backend
+git clone https://github.com/ramcharansadu46-bit/Smart-Home-Appliances-Guide-with-Chatbot.git
+```
+
+---
+
+## 2️⃣ Navigate to Project Folder
+
+```bash
+cd "Smart Home Appliances Buyers Guide with Chatbot"
+```
+
+---
+
+## 3️⃣ Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+---
+
+## 4️⃣ Activate Virtual Environment
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / Mac
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## 5️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-cp .env.example .env  # Optional: Configure search mode
-uvicorn app.main:app --reload
 ```
 
-Open browser: `http://localhost:8000`
+---
 
-## 📚 Detailed Documentation
-
-- **Setup & Testing Guide**: See [SETUP.md](SETUP.md)
-- **Configuration Options**: See [.env.example](.env.example)
-
-## 🏗️ Architecture
-
-- **Backend**: FastAPI + Python 3.12
-- **Frontend**: Bootstrap 5 (CDN)
-- **Search Modes**: Static (100+ products), Google Shopping (real-time), Amazon API (optional)
-- **Database**: In-memory products database with full text search
-
-## 🚢 Deployment
+# ▶️ Run the Project
 
 ```bash
-docker-compose up --build
+python backend/app/main.py
 ```
 
-## 📝 License
+OR
 
-MIT License - Free for personal and commercial use.
+```bash
+uvicorn main:app --reload
+```
 
+---
+
+# 📸 Screenshots
+
+## 🏠 Home Page
+
+*Add screenshot here*
+
+## 🤖 AI Chatbot
+
+*Add screenshot here*
+
+## 🛒 Appliance Recommendations
+
+*Add screenshot here*
+
+---
+
+# 🔮 Future Enhancements
+
+* 🧠 Improved AI recommendation engine
+* 📊 Real-time analytics dashboard
+* 🌐 Cloud deployment
+* 🎙️ Voice-enabled chatbot
+* 📱 Mobile application support
+* 🔔 Smart notification system
+
+---
+
+# 👨‍💻 Author
+
+## Ramcharan Sadu
+
+* GitHub: [https://github.com/ramcharansadu46-bit](https://github.com/ramcharansadu46-bit)
+
+---
+
+# ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub.
