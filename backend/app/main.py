@@ -67,7 +67,6 @@ UNSAFE_CONTENT_PATTERNS = [
 # Setup templates 
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 templates = Jinja2Templates(directory=os.path.join(APP_DIR, "templates"))
-templates.env.cache = {}
 
 # Mount static files
 STATIC_DIR = os.path.join(APP_DIR, "static")
@@ -314,9 +313,9 @@ async def generate_pros_cons(product: Dict, ai_result: AIAnalysis) -> Tuple[List
 async def index(request: Request):
     """Serve the home page."""
     return templates.TemplateResponse(
+        request,
         "index.html",
         {
-            "request": request,
             "categories": list(PRODUCT_CATEGORIES.keys()),
         },
     )
@@ -325,9 +324,11 @@ async def index(request: Request):
 @app.get("/how-it-works", response_class=HTMLResponse)
 async def how_it_works(request: Request):
     """Serve the How It Works page."""
-    return templates.TemplateResponse("how_it_works.html", {
-        "request": request,
-    })
+    return templates.TemplateResponse(
+        request,
+        "how_it_works.html",
+        {},
+    )
 
 # ─── AI Advisor (v3.1.0 Hybrid Architecture) ──────────────────
 @app.post("/advisor")
